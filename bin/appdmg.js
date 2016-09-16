@@ -7,7 +7,6 @@ var minimist = require('minimist')
 var pkg = require('../package.json')
 var appdmg = require('../index.js')
 var colors = require('../lib/colors')
-var repeatString = require('repeat-string')
 
 function maybeWithColor (color, text) {
   if (!process.stderr.isTTY) return text
@@ -88,7 +87,7 @@ p.on('progress', function (info) {
 
   if (info.type === 'step-begin') {
     var line = '[' + (info.current <= 9 ? ' ' : '') + info.current + '/' + info.total + '] ' + info.title + '...'
-    process.stderr.write(line + repeatString(' ', 45 - line.length))
+    process.stderr.write(line + ' '.repeat(45 - line.length))
   }
 
   if (info.type === 'step-end') {

@@ -1,5 +1,5 @@
 {
-  "name": "appdmg",
+  "name": "appdmg-tf",
   "version": "0.4.6",
   "license": "MIT",
   "author": "Linus Unnebäck <linus@folkdatorn.se>",
@@ -15,8 +15,7 @@
     "image-size": "^0.5.0",
     "is-my-json-valid": "^2.13.1",
     "minimist": "^1.2.0",
-    "parse-color": "^1.0.0",
-    "repeat-string": "^1.5.4"
+    "parse-color": "^1.0.0"
   },
   "engines": {
     "node": ">=0.12"
