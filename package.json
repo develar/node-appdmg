@@ -1,15 +1,20 @@
 {
   "name": "appdmg-tf",
-  "version": "0.4.6",
+  "version": "0.4.9",
   "license": "MIT",
   "author": "Linus Unnebäck <linus@folkdatorn.se>",
   "bin": "bin/appdmg.js",
   "main": "index.js",
+  "files": [
+    "bin",
+    "lib",
+    "*.js",
+    "schema.json"
+  ],
   "dependencies": {
     "async": "^2.0.1",
     "cp-file": "^3.2.0",
     "ds-store": "^0.1.6",
-    "execa": "^0.4.0",
     "fs-temp": "^1.1.1",
     "fs-xattr": "^0.1.14",
     "image-size": "^0.5.0",
